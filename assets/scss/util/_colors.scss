@@ -23,13 +23,7 @@ $colors: (
     success-dark: $success-dark,
     success: $success,
     success-light: $success-light,
-    success-lighter: $success-lighter,
-    purple: $purple,
-    purple-dark: $purple-dark,
-    pink: $pink,
-    pink-dark: $pink-dark,
-    orange: $orange,
-    orange-light: $orange-light
+    success-lighter: $success-lighter
 );
 
 @each $item in $colors {

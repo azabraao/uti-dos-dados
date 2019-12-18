@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-
+const image = require('gulp-image');
 sass.compiler = require('node-sass');
 
 gulp.task('image', async () => {
