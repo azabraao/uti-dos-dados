@@ -1,10 +1,33 @@
 .site-footer.obrigado {
 }
 .site-footer {
+  text-align: center;
+  padding: 80px 0 40px;
   .site-footer__inside {
-  }
-  .site-footer__social-logos {
-  }
-  .site-footer__copyright {
+    .content {
+      font-family: $font-primary;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: 80px;
+      margin-bottom: 20px;
+    }
+
+    .site-footer__social-logos {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 5px;
+        max-width: 70px;
+      }
+    }
+
+    .site-footer__copyright {
+      padding-top: 100px;
+      font-family: $font-primary;
+      font-weight: bold;
+      font-size: 20px;
+    }
   }
 }

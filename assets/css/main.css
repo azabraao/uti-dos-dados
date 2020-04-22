@@ -170,6 +170,28 @@ html, body {
           z-index: 2;
           margin-left: -50px; } }
 
+.site-footer {
+  text-align: center;
+  padding: 80px 0 40px; }
+  .site-footer .site-footer__inside .content {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 20px; }
+  .site-footer .site-footer__inside .site-footer__social-logos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; }
+    .site-footer .site-footer__inside .site-footer__social-logos img {
+      margin: 5px;
+      max-width: 70px; }
+  .site-footer .site-footer__inside .site-footer__copyright {
+    padding-top: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 20px; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -214,10 +236,14 @@ html, body {
   text-decoration: none;
   display: inline-block;
   font-weight: bold;
-  box-shadow: 5px 5px 7px #00000029; }
+  box-shadow: 5px 5px 7px #00000029;
+  border: 0; }
 
 .button--small {
   font-size: 12px; }
+
+.button--large {
+  padding: 15px 50px; }
 
 .button--danger {
   background: #ff0000;
