@@ -170,6 +170,59 @@ html, body {
           z-index: 2;
           margin-left: -50px; } }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .boxes .box {
+    width: 100%;
+    max-width: 320px;
+    margin: 10px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 6px 9px 15px #00000029;
+    border-radius: 32px; }
+    .boxes .box .box__header {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .boxes .box .box__header img {
+        max-height: 100%; }
+    .boxes .box .box__body {
+      padding: 20px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif; }
+      .boxes .box .box__body h3 {
+        color: #ff0000;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      .boxes .box .box__body p {
+        font-size: 12px; }
+    .boxes .box .box__footer {
+      padding-top: 20px;
+      text-align: center;
+      padding-bottom: 20px; }
+
+@media only screen and (min-width: 48rem) {
+  .boxes .box .box__header {
+    height: 300px; } }
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  box-shadow: 5px 5px 7px #00000029; }
+
+.button--small {
+  font-size: 12px; }
+
+.button--danger {
+  background: #ff0000;
+  color: #fff; }
+
 .bg-primary {
   background-color: ""; }
 
@@ -228,7 +281,7 @@ html, body {
   background-color: ""; }
 
 .bg-danger {
-  background-color: ""; }
+  background-color: #ff0000; }
 
 .bg-danger-dark {
   background-color: ""; }
@@ -303,7 +356,7 @@ html, body {
   color: ""; }
 
 .color-danger {
-  color: ""; }
+  color: #ff0000; }
 
 .color-danger-dark {
   color: ""; }
@@ -349,3 +402,11 @@ html, body {
 
 .text-right {
   text-align: right; }
+
+.outros-servicos .outros-servicos__header {
+  margin-bottom: 40px; }
+  .outros-servicos .outros-servicos__header h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase; }
