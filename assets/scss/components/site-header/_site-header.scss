@@ -1,0 +1,123 @@
+.site-header.obrigado:before {
+  content: "";
+  background-image: url(../img/forma-06@2x.png);
+  height: 180px;
+  width: 200%;
+  // max-width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.site-header.obrigado:after {
+  content: "";
+  background-image: url(../img/forma-07@2x.png);
+  height: 180px;
+  width: 100%;
+  // max-width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-position: bottom;
+  background-size: 230% 100%;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.site-header.obrigado {
+  padding-bottom: 20px;
+
+  overflow: hidden;
+}
+.site-header {
+  position: relative;
+  background: $info-gradient;
+
+  .site-header__inside {
+    .navbar {
+      position: relative;
+      z-index: 1;
+
+      margin-bottom: 120px;
+      .logo {
+        width: 210px;
+      }
+    }
+    .site-header__body {
+      .content {
+        font-family: $font-primary;
+        color: $white;
+        h1 {
+          font-size: 48px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        p {
+        }
+      }
+      .image {
+        img {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-up) {
+  .site-header.obrigado:before {
+    width: 100%;
+    height: 360px;
+  }
+  .site-header.obrigado:after {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: 220px;
+  }
+  .site-header.obrigado {
+  }
+  .site-header {
+    .site-header__inside {
+      padding-top: 100px;
+
+      .navbar {
+        margin-bottom: 180px;
+
+        .logo {
+          width: 250px;
+        }
+      }
+      .site-header__body {
+        display: flex;
+
+        .content {
+          width: 50%;
+          h1 {
+            font-size: 90px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .image {
+          width: 50%;
+
+          img {
+            width: 200%;
+            max-width: 1000%;
+            margin-top: -250px;
+            position: relative;
+            z-index: 2;
+            margin-left: -50px;
+          }
+        }
+      }
+    }
+  }
+}
