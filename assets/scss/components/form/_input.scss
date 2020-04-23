@@ -1,0 +1,15 @@
+.input-wrap {
+  .input-text::placeholder {
+    font-family: $font-primary;
+    color: $black;
+  }
+  .input-text {
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $danger;
+    padding: 5px 0;
+  }
+}

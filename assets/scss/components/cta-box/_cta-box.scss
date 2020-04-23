@@ -1,0 +1,38 @@
+.cta-box {
+  max-width: 400px;
+  border-radius: 30px;
+  background: $white;
+  position: relative;
+  z-index: 1;
+
+  .cta-box__inner {
+    padding: 40px 20px;
+
+    .cta-box__header {
+      text-align: center;
+      font-family: $font-primary;
+
+      h2 {
+        color: $danger;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      p {
+      }
+    }
+    .cta-box__body {
+      padding: 30px;
+
+      .cta-box__form {
+      }
+    }
+    .cta-box__footer {
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

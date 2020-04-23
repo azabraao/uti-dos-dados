@@ -22,3 +22,26 @@
   background: $danger;
   color: $white;
 }
+
+.button--medium {
+  padding: 20px 30px;
+}
+
+.button--pendrive::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icone-entrada-pendrive.png);
+  right: -48px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  margin: auto;
+  top: -21px;
+  bottom: -33px;
+  background-size: contain;
+}
+
+.button--pendrive {
+  position: relative;
+  margin-right: 30px;
+}
