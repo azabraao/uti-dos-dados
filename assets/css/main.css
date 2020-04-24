@@ -140,6 +140,7 @@ html, body {
   background-size: 3500px 130%;
   background-position: top;
   padding-bottom: 50px;
+  padding-top: 20px;
   background-repeat: no-repeat; }
   .site-header.main .site-header__inside .navbar {
     display: flex;
@@ -208,6 +209,7 @@ html, body {
   .site-header.main {
     max-width: 2000px;
     margin: 0 auto;
+    padding-top: 0;
     background-image: url(../img/site-header-background.png);
     background-size: 100% 100%;
     background-position: top;
