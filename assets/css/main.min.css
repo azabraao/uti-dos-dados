@@ -446,6 +446,12 @@ html, body {
 .bg-black {
   background-color: #000; }
 
+.bg-info {
+  background-color: #6fabcd; }
+
+.bg-info-dark {
+  background-color: #33588c; }
+
 .bg-white {
   background-color: #fff; }
 
@@ -520,6 +526,12 @@ html, body {
 
 .color-black {
   color: #000; }
+
+.color-info {
+  color: #6fabcd; }
+
+.color-info-dark {
+  color: #33588c; }
 
 .color-white {
   color: #fff; }
@@ -695,3 +707,109 @@ html, body {
           z-index: 1;
           right: 59px;
           position: relative; } }
+
+.entenda-melhor {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .entenda-melhor .entenda-melhor__header {
+    padding: 20px;
+    border-radius: 40px;
+    border: 2px solid #6fabcd; }
+    .entenda-melhor .entenda-melhor__header h2 {
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      color: #33588c;
+      font-weight: bold;
+      text-transform: uppercase; }
+  .entenda-melhor .entenda-melhor__body {
+    padding-top: 20px; }
+    .entenda-melhor .entenda-melhor__body .entenda-melhor__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      .entenda-melhor .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item {
+        width: 290px;
+        text-align: center;
+        margin: 20px; }
+        .entenda-melhor .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__icon {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 20px;
+          align-items: center; }
+          .entenda-melhor .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__icon img {
+            width: 30px; }
+        .entenda-melhor .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__content {
+          font-family: "Montserrat", sans-serif; }
+          .entenda-melhor .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__content h3 {
+            text-transform: uppercase;
+            color: #6fabcd;
+            margin-bottom: 10px; }
+
+@media only screen and (min-width: 75rem) {
+  .entenda-melhor {
+    position: relative;
+    padding-top: 200px; }
+    .entenda-melhor .entenda-melhor__inside::before {
+      content: "";
+      position: absolute;
+      background-image: url(../img/camiho-curvado-01.png);
+      left: -280px;
+      top: -597px;
+      width: 600px;
+      height: 600px;
+      background-size: 100% 100%;
+      z-index: 1; }
+    .entenda-melhor .entenda-melhor__inside::after {
+      content: "";
+      position: absolute;
+      background-image: url(../img/caminho-curvado-02@2x.png);
+      left: -280px;
+      top: 147px;
+      width: 600px;
+      height: 600px;
+      background-size: 100% 100%;
+      z-index: 1; }
+    .entenda-melhor .entenda-melhor__inside {
+      position: relative; }
+      .entenda-melhor .entenda-melhor__inside .entenda-melhor__header::before {
+        content: "";
+        position: absolute;
+        top: -150px;
+        width: 3px;
+        height: 150px;
+        background: #6fabcd;
+        right: 260px;
+        z-index: -1; }
+      .entenda-melhor .entenda-melhor__inside .entenda-melhor__header::after {
+        content: "";
+        background-image: url(../img/forma-02@2x.png);
+        position: absolute;
+        top: 144px;
+        width: 18px;
+        height: 560px;
+        right: 510px;
+        z-index: 1;
+        background-size: contain;
+        background-repeat: no-repeat; }
+      .entenda-melhor .entenda-melhor__inside .entenda-melhor__header {
+        position: relative;
+        width: 930px;
+        margin-left: auto;
+        margin-top: 40px;
+        text-align: center;
+        padding: 40px 180px 40px 20px;
+        font-size: 123px; }
+        .entenda-melhor .entenda-melhor__inside .entenda-melhor__header h2 {
+          font-size: 26px; }
+      .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item {
+        width: 400px; }
+        .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__icon {
+          height: 80px; }
+          .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__icon img {
+            width: 50px; }
+        .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__content h3 {
+          font-size: 20px; }
+        .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__content p {
+          font-size: 20px; }
+        .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__content .size-up {
+          font-size: 22px; } }
