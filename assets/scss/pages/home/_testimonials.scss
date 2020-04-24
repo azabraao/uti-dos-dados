@@ -1,0 +1,271 @@
+.testimonials {
+  padding: 50px 0;
+
+  .testimonials__inside {
+    .testimonials__header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-weight: bold;
+        font-family: $font-primary;
+        text-transform: uppercase;
+      }
+    }
+
+    .testimonials__slide {
+      position: relative;
+      max-width: 500px;
+      margin: 0 auto;
+
+      .testimonials__slide-paginator {
+        display: none;
+      }
+
+      .testimonials__slide-items {
+        .testimonials__slide-item {
+          text-align: center;
+          padding: 20px 0;
+          max-width: 500px;
+
+          .testimonials__item-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            max-width: 500px;
+
+            div:before {
+              content: "";
+              position: absolute;
+              right: -37px;
+              width: 40px;
+              height: 40px;
+              top: 0;
+              background-image: url(../img/icon-aspas@2x.png);
+              background-size: contain;
+            }
+            div {
+              position: relative;
+
+              img {
+                position: relative;
+                width: 200px;
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .testimonials__item-title {
+            font-family: $font-primary;
+            max-width: 500px;
+
+            h4 {
+              font-weight: bold;
+            }
+          }
+          .testimonials__item-rating {
+            display: flex;
+            justify-content: center;
+            max-width: 500px;
+
+            img {
+              margin: 10px 0;
+              max-width: 140px;
+            }
+          }
+          .testimonials__item-text {
+            font-family: $font-primary;
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+      .testimonials__slide-control {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        max-width: 300px;
+        margin: 0 auto;
+        padding-top: 25px 0;
+
+        .slide-next.active,
+        .slide-prev.active {
+          opacity: 1;
+        }
+
+        .slide-next,
+        .slide-prev {
+          background: transparent;
+          border: none;
+          width: 30px;
+          opacity: 0.5;
+          cursor: pointer;
+        }
+
+        .slide-prev {
+          img {
+          }
+        }
+        .slide-steps {
+          font-family: Arial;
+          letter-spacing: 2px;
+        }
+        .slide-next {
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  top: 80px;
+  // display: flex;
+  // flex-direction: column;
+
+  li.slick-active {
+    button {
+      background: $danger;
+    }
+  }
+
+  li {
+    button {
+      color: transparent;
+      width: 10px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1.5px solid $danger;
+      margin: 3px;
+      background: transparent;
+      font-size: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-up) {
+  .testimonials {
+    background-image: url(../img/depoimentos-background@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 190px 0;
+    background-position: center;
+
+    .testimonials__inside:before {
+      content: "";
+      background-image: url(../img/forma-05@2x.png);
+      top: -290px;
+      left: -180px;
+      width: 180px;
+      height: 250px;
+      position: absolute;
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    .testimonials__inside {
+      position: relative;
+
+      .testimonials__header {
+        max-width: 470px;
+        font-size: 28px;
+        margin-bottom: 50px;
+      }
+
+      .testimonials__slide {
+        margin-left: 0;
+
+        .testimonials__slide-paginator {
+          display: none;
+        }
+
+        .testimonials__slide-items {
+          .testimonials__slide-item {
+            text-align: center;
+            padding: 20px 0;
+            max-width: 500px;
+
+            .testimonials__item-image {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              max-width: 500px;
+
+              div:before {
+                content: "";
+                position: absolute;
+                right: -37px;
+                width: 40px;
+                height: 40px;
+                top: 0;
+                background-image: url(../img/icon-aspas@2x.png);
+                background-size: contain;
+              }
+              div {
+                position: relative;
+
+                img {
+                  position: relative;
+                  width: 200px;
+                  margin-bottom: 20px;
+                }
+              }
+            }
+            .testimonials__item-title {
+              font-family: $font-primary;
+              max-width: 500px;
+
+              h4 {
+                font-weight: bold;
+              }
+            }
+            .testimonials__item-rating {
+              img {
+              }
+            }
+            .testimonials__item-text {
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .testimonials__slide-control {
+          padding: 49px 0;
+
+          .slide-next.active,
+          .slide-prev.active {
+            opacity: 1;
+          }
+
+          .slide-next,
+          .slide-prev {
+            background: transparent;
+            border: none;
+            width: 30px;
+            opacity: 0.5;
+            cursor: pointer;
+          }
+
+          .slide-prev {
+            img {
+            }
+          }
+          .slide-steps {
+            font-family: Arial;
+            letter-spacing: 2px;
+          }
+          .slide-next {
+            img {
+            }
+          }
+        }
+      }
+    }
+  }
+}

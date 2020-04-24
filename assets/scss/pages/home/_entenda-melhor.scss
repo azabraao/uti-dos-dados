@@ -58,6 +58,7 @@
   .entenda-melhor {
     position: relative;
     padding-top: 200px;
+    padding-bottom: 120px;
 
     .entenda-melhor__inside::before {
       content: "";
@@ -96,6 +97,7 @@
         right: 260px;
         z-index: -1;
       }
+
       .entenda-melhor__header::after {
         content: "";
         background-image: url(../img/forma-02@2x.png);

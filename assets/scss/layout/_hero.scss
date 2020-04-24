@@ -1,0 +1,18 @@
+.hero {
+}
+
+.hero.resolva-agora {
+  padding: 30px 0;
+  background: $info;
+  margin-bottom: 100px;
+
+  .hero__inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button {
+      padding: 25px;
+    }
+  }
+}

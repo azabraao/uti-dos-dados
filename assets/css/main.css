@@ -85,6 +85,17 @@ html, body {
   .container {
     width: 65.625rem; } }
 
+.hero.resolva-agora {
+  padding: 30px 0;
+  background: #6fabcd;
+  margin-bottom: 100px; }
+  .hero.resolva-agora .hero__inside {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .hero.resolva-agora .hero__inside .button {
+      padding: 25px; }
+
 .site-header.obrigado:before {
   content: "";
   background-image: url(../img/forma-06@2x.png);
@@ -748,7 +759,8 @@ html, body {
 @media only screen and (min-width: 75rem) {
   .entenda-melhor {
     position: relative;
-    padding-top: 200px; }
+    padding-top: 200px;
+    padding-bottom: 120px; }
     .entenda-melhor .entenda-melhor__inside::before {
       content: "";
       position: absolute;
@@ -813,3 +825,168 @@ html, body {
           font-size: 20px; }
         .entenda-melhor .entenda-melhor__inside .entenda-melhor__body .entenda-melhor__items .entenda-melhor__item .entenda-melhor__content .size-up {
           font-size: 22px; } }
+
+.testimonials {
+  padding: 50px 0; }
+  .testimonials .testimonials__inside .testimonials__header {
+    margin-bottom: 20px; }
+    .testimonials .testimonials__inside .testimonials__header h2 {
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase; }
+  .testimonials .testimonials__inside .testimonials__slide {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto; }
+    .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-paginator {
+      display: none; }
+    .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item {
+      text-align: center;
+      padding: 20px 0;
+      max-width: 500px; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        max-width: 500px; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image div:before {
+          content: "";
+          position: absolute;
+          right: -37px;
+          width: 40px;
+          height: 40px;
+          top: 0;
+          background-image: url(../img/icon-aspas@2x.png);
+          background-size: contain; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image div {
+          position: relative; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image div img {
+            position: relative;
+            width: 200px;
+            margin-bottom: 20px; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-title {
+        font-family: "Montserrat", sans-serif;
+        max-width: 500px; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-title h4 {
+          font-weight: bold; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-rating {
+        display: flex;
+        justify-content: center;
+        max-width: 500px; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-rating img {
+          margin: 10px 0;
+          max-width: 140px; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-text {
+        font-family: "Montserrat", sans-serif; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-text p {
+          font-size: 13px; }
+    .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      max-width: 300px;
+      margin: 0 auto;
+      padding-top: 25px 0; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-next.active,
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-prev.active {
+        opacity: 1; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-next,
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-prev {
+        background: transparent;
+        border: none;
+        width: 30px;
+        opacity: 0.5;
+        cursor: pointer; }
+      .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-steps {
+        font-family: Arial;
+        letter-spacing: 2px; }
+
+.slick-dots {
+  position: absolute;
+  top: 80px; }
+  .slick-dots li.slick-active button {
+    background: #ff0000; }
+  .slick-dots li button {
+    color: transparent;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1.5px solid #ff0000;
+    margin: 3px;
+    background: transparent;
+    font-size: 0; }
+
+@media only screen and (min-width: 48rem) {
+  .testimonials {
+    background-image: url(../img/depoimentos-background@2x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 190px 0;
+    background-position: center; }
+    .testimonials .testimonials__inside:before {
+      content: "";
+      background-image: url(../img/forma-05@2x.png);
+      top: -290px;
+      left: -180px;
+      width: 180px;
+      height: 250px;
+      position: absolute;
+      background-size: contain;
+      background-position: right;
+      background-repeat: no-repeat; }
+    .testimonials .testimonials__inside {
+      position: relative; }
+      .testimonials .testimonials__inside .testimonials__header {
+        max-width: 470px;
+        font-size: 28px;
+        margin-bottom: 50px; }
+      .testimonials .testimonials__inside .testimonials__slide {
+        margin-left: 0; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-paginator {
+          display: none; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item {
+          text-align: center;
+          padding: 20px 0;
+          max-width: 500px; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            max-width: 500px; }
+            .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image div:before {
+              content: "";
+              position: absolute;
+              right: -37px;
+              width: 40px;
+              height: 40px;
+              top: 0;
+              background-image: url(../img/icon-aspas@2x.png);
+              background-size: contain; }
+            .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image div {
+              position: relative; }
+              .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-image div img {
+                position: relative;
+                width: 200px;
+                margin-bottom: 20px; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-title {
+            font-family: "Montserrat", sans-serif;
+            max-width: 500px; }
+            .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-title h4 {
+              font-weight: bold; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-items .testimonials__slide-item .testimonials__item-text p {
+            font-size: 16px; }
+        .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control {
+          padding: 49px 0; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-next.active,
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-prev.active {
+            opacity: 1; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-next,
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-prev {
+            background: transparent;
+            border: none;
+            width: 30px;
+            opacity: 0.5;
+            cursor: pointer; }
+          .testimonials .testimonials__inside .testimonials__slide .testimonials__slide-control .slide-steps {
+            font-family: Arial;
+            letter-spacing: 2px; } }
