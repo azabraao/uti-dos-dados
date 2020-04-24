@@ -1,8 +1,7 @@
 .site-footer.obrigado {
-}
-.site-footer {
   text-align: center;
   padding: 80px 0 40px;
+
   .site-footer__inside {
     .content {
       font-family: $font-primary;
@@ -27,6 +26,139 @@
       padding-top: 100px;
       font-family: $font-primary;
       font-weight: bold;
+      font-size: 20px;
+    }
+  }
+}
+
+.site-footer.home {
+  background: $info-gradient;
+  margin-top: 200px;
+
+  .site-footer__inside {
+    padding-bottom: 20px;
+
+    .footer-map {
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      iframe {
+        position: relative;
+        z-index: 1;
+        outline: 5px solid $info;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        height: 400px;
+        margin-top: -150px;
+      }
+    }
+
+    .site-footer__content {
+      text-align: center;
+      font-family: $font-primary;
+      color: $white;
+      font-size: 20px;
+
+      .site-footer__content-row {
+        padding: 50px 0;
+      }
+
+      p {
+      }
+
+      hr {
+        border: 1px solid $danger;
+        margin: 0 auto;
+        width: 80%;
+      }
+    }
+
+    .site-footer__social-logos {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 5px;
+        max-width: 70px;
+      }
+    }
+  }
+  .site-footer__copyright {
+    padding: 20px;
+    background: $white;
+    font-family: $font-primary;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: $mobile-up) {
+  .site-footer.home:before {
+  }
+
+  .site-footer.home {
+    position: relative;
+
+    .site-footer__inside:after {
+      content: "";
+      background-image: url(../img/formas-02@2x.png);
+      width: 270px;
+      height: 180px;
+      position: absolute;
+      top: -110px;
+      right: -221px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .site-footer__inside:before {
+      content: "";
+      background-image: url(../img/formas-01@2x.png);
+      width: 80px;
+      height: 220px;
+      position: absolute;
+      top: -219px;
+      left: -80px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .site-footer__inside {
+      position: relative;
+
+      .footer-map::before {
+        content: "";
+        position: absolute;
+        background-image: url(../img/camiho-curvado-01.png);
+        left: -280px;
+        top: -597px;
+        width: 600px;
+        height: 600px;
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+
+      .footer-map::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/caminho-curvado-02@2x.png);
+        left: -280px;
+        top: 147px;
+        width: 600px;
+        height: 600px;
+        background-size: 100% 100%;
+        z-index: 0;
+      }
+
+      .site-footer__content {
+        font-size: 30px;
+      }
+    }
+    .site-footer__copyright {
       font-size: 20px;
     }
   }

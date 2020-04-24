@@ -285,27 +285,121 @@ html, body {
           z-index: 2;
           margin-left: -50px; } }
 
-.site-footer {
+.site-footer.obrigado {
   text-align: center;
   padding: 80px 0 40px; }
-  .site-footer .site-footer__inside .content {
+  .site-footer.obrigado .site-footer__inside .content {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 30px;
     margin-top: 80px;
     margin-bottom: 20px; }
-  .site-footer .site-footer__inside .site-footer__social-logos {
+  .site-footer.obrigado .site-footer__inside .site-footer__social-logos {
     margin-top: 30px;
     display: flex;
     justify-content: center; }
-    .site-footer .site-footer__inside .site-footer__social-logos img {
+    .site-footer.obrigado .site-footer__inside .site-footer__social-logos img {
       margin: 5px;
       max-width: 70px; }
-  .site-footer .site-footer__inside .site-footer__copyright {
+  .site-footer.obrigado .site-footer__inside .site-footer__copyright {
     padding-top: 100px;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 20px; }
+
+.site-footer.home {
+  background: linear-gradient(291deg, #6fabcd 0%, #33588c 100%);
+  margin-top: 200px; }
+  .site-footer.home .site-footer__inside {
+    padding-bottom: 20px; }
+    .site-footer.home .site-footer__inside .footer-map {
+      display: flex;
+      justify-content: center;
+      position: relative; }
+      .site-footer.home .site-footer__inside .footer-map iframe {
+        position: relative;
+        z-index: 1;
+        outline: 5px solid #6fabcd;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1000px;
+        height: 400px;
+        margin-top: -150px; }
+    .site-footer.home .site-footer__inside .site-footer__content {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-size: 20px; }
+      .site-footer.home .site-footer__inside .site-footer__content .site-footer__content-row {
+        padding: 50px 0; }
+      .site-footer.home .site-footer__inside .site-footer__content hr {
+        border: 1px solid #ff0000;
+        margin: 0 auto;
+        width: 80%; }
+    .site-footer.home .site-footer__inside .site-footer__social-logos {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center; }
+      .site-footer.home .site-footer__inside .site-footer__social-logos img {
+        margin: 5px;
+        max-width: 70px; }
+  .site-footer.home .site-footer__copyright {
+    padding: 20px;
+    background: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center; }
+
+@media only screen and (min-width: 48rem) {
+  .site-footer.home {
+    position: relative; }
+    .site-footer.home .site-footer__inside:after {
+      content: "";
+      background-image: url(../img/formas-02@2x.png);
+      width: 270px;
+      height: 180px;
+      position: absolute;
+      top: -110px;
+      right: -221px;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .site-footer.home .site-footer__inside:before {
+      content: "";
+      background-image: url(../img/formas-01@2x.png);
+      width: 80px;
+      height: 220px;
+      position: absolute;
+      top: -219px;
+      left: -80px;
+      background-repeat: no-repeat;
+      background-size: contain; }
+    .site-footer.home .site-footer__inside {
+      position: relative; }
+      .site-footer.home .site-footer__inside .footer-map::before {
+        content: "";
+        position: absolute;
+        background-image: url(../img/camiho-curvado-01.png);
+        left: -280px;
+        top: -597px;
+        width: 600px;
+        height: 600px;
+        background-size: 100% 100%;
+        z-index: -1; }
+      .site-footer.home .site-footer__inside .footer-map::after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/caminho-curvado-02@2x.png);
+        left: -280px;
+        top: 147px;
+        width: 600px;
+        height: 600px;
+        background-size: 100% 100%;
+        z-index: 0; }
+      .site-footer.home .site-footer__inside .site-footer__content {
+        font-size: 30px; }
+    .site-footer.home .site-footer__copyright {
+      font-size: 20px; } }
 
 .boxes {
   display: flex;
@@ -345,12 +439,14 @@ html, body {
 
 .cta-box {
   max-width: 400px;
-  border-radius: 30px;
   background: #fff;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  border-radius: 30px; }
   .cta-box .cta-box__inner {
-    padding: 40px 20px; }
+    padding: 40px 20px;
+    border-radius: 30px;
+    background: #fff; }
     .cta-box .cta-box__inner .cta-box__header {
       text-align: center;
       font-family: "Montserrat", sans-serif; }
@@ -612,6 +708,9 @@ html, body {
 
 .text-right {
   text-align: right; }
+
+.text-underline {
+  text-decoration: underline; }
 
 .outros-servicos .outros-servicos__header {
   margin-bottom: 40px; }
@@ -1026,6 +1125,7 @@ html, body {
       display: flex;
       justify-content: center; }
       .como-enviar .como-enviar__columns .como-enviar__column.image img {
+        width: 100%;
         max-width: 400px; }
 
 @media only screen and (min-width: 75rem) {
@@ -1052,3 +1152,52 @@ html, body {
         padding-top: 10px; }
         .como-enviar .como-enviar__columns .como-enviar__column.image img {
           max-width: 110%; } }
+
+.cta-section {
+  position: relative;
+  padding: 100px 0; }
+  .cta-section .cta-section__inside {
+    display: flex;
+    justify-content: center; }
+    .cta-section .cta-section__inside .cta-box {
+      position: relative;
+      z-index: 1;
+      border: 2px solid #6fabcd; }
+
+@media only screen and (min-width: 48rem) {
+  .cta-section .cta-section__inside .cta-box::before {
+    content: "";
+    background-image: url(../img/contato-background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200%;
+    height: 150%;
+    position: absolute;
+    z-index: -2;
+    margin: auto;
+    top: 49px;
+    left: -210px;
+    right: 0;
+    bottom: 0; } }
+
+@media only screen and (min-width: 75rem) {
+  .cta-section .cta-section__inside .cta-box::before {
+    content: "";
+    background-image: url(../img/contato-background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200%;
+    height: 150%;
+    position: absolute;
+    z-index: -2;
+    margin: auto;
+    top: 49px;
+    left: -210px;
+    right: 0;
+    bottom: 0; }
+  .cta-section .cta-section__inside .cta-box {
+    margin-top: -160px; } }

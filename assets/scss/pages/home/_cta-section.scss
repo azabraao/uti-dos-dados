@@ -1,0 +1,66 @@
+.cta-section {
+  position: relative;
+  padding: 100px 0;
+
+  .cta-section__inside {
+    display: flex;
+    justify-content: center;
+
+    .cta-box {
+      position: relative;
+      z-index: 1;
+      border: 2px solid $info;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-up) {
+  .cta-section {
+    .cta-section__inside {
+      .cta-box::before {
+        content: "";
+        background-image: url(../img/contato-background.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 200%;
+        height: 150%;
+        position: absolute;
+        z-index: -2;
+        margin: auto;
+        top: 49px;
+        left: -210px;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-up) {
+  .cta-section {
+    .cta-section__inside {
+      .cta-box::before {
+        content: "";
+        background-image: url(../img/contato-background.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 200%;
+        height: 150%;
+        position: absolute;
+        z-index: -2;
+        margin: auto;
+        top: 49px;
+        left: -210px;
+        right: 0;
+        bottom: 0;
+      }
+      .cta-box {
+        margin-top: -160px;
+      }
+    }
+  }
+}
