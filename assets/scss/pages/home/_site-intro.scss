@@ -1,0 +1,157 @@
+.site-intro {
+  background-image: url(../img/site-intro-background@2x.png);
+  background-repeat: no-repeat;
+  background-size: 2000px 100%;
+  padding: 30px 0;
+  background-position: center;
+
+  .site-intro__header {
+    padding: 40px 20px;
+    border: 2px solid white;
+    border-radius: 40px;
+
+    h2 {
+      font-family: $font-primary;
+      font-weight: bold;
+      font-size: 20px;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+
+  .site-intro__video {
+    padding-top: 20px;
+  }
+
+  .site-intro__content {
+    padding: 70px 30px;
+    border-radius: 30px;
+    background: $white;
+    margin-top: -42px;
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $font-primary;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      div {
+        display: inline;
+      }
+    }
+
+    p {
+      font-family: $font-primary;
+    }
+  }
+
+  .site-intro__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    img {
+      max-width: 300px;
+      margin: 10px;
+    }
+
+    .site-intro__image-1 {
+    }
+    .site-intro__image-2 {
+    }
+    .site-intro__image-3 {
+    }
+    .site-intro__image-4 {
+    }
+  }
+}
+
+@media only screen and (min-width: $desktop-up) {
+  .site-intro {
+    position: relative;
+    background-size: 2000px 2100px;
+    background-position: top;
+    padding: 30px 0 200px;
+
+    .site-intro__inside {
+      position: relative;
+
+      .site-intro__header {
+        width: 967px;
+        margin-top: 54px;
+        padding: 60px 30px;
+        border: 4px solid $white;
+
+        h2 {
+          font-size: 35px;
+        }
+      }
+
+      .site-intro__video {
+        padding-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          width: 800px;
+        }
+      }
+
+      .site-intro__content {
+        width: 600px;
+        padding: 100px 20px 100px 50px;
+        border-radius: 60px;
+
+        h3 {
+          font-size: 37px;
+          margin-bottom: 40px;
+
+          div {
+            display: block;
+          }
+        }
+
+        p {
+          font-family: $font-primary;
+          margin-bottom: 30px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+
+      .site-intro__images {
+        position: absolute;
+        height: 700px;
+        width: 640px;
+        bottom: -230px;
+        right: -150px;
+
+        img {
+          position: relative;
+        }
+
+        .site-intro__image-1 {
+          position: relative;
+          top: 140px;
+          right: -100px;
+          z-index: 0;
+        }
+        .site-intro__image-2 {
+          z-index: 1;
+        }
+        .site-intro__image-3 {
+          bottom: -160px;
+          right: -71px;
+        }
+        .site-intro__image-4 {
+          z-index: 1;
+          right: 59px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
