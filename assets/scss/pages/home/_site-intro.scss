@@ -21,6 +21,8 @@
 
   .site-intro__video {
     padding-top: 20px;
+    position: relative;
+    z-index: 1;
   }
 
   .site-intro__content {
@@ -145,6 +147,8 @@
         .site-intro__image-3 {
           bottom: -160px;
           right: -71px;
+          position: relative;
+          z-index: 1;
         }
         .site-intro__image-4 {
           z-index: 1;

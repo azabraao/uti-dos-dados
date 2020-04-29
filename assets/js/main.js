@@ -24,3 +24,5 @@ $(document).ready(function () {
     $(".jsSlidePrev").removeClass("active");
   });
 });
+
+AOS.init();
