@@ -13,7 +13,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.min.css?v=1" />
   </head>
   <body>
     <header class="site-header main">

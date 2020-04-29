@@ -8,7 +8,7 @@
     <title>UTI dos dados | Obrigado</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.min.css?v=1" />
   </head>
   <body>
     <header class="site-header obrigado">
