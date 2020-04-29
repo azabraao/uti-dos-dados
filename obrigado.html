@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- TODO: Rename title -->
     <title>Document</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.min.css" />
   </head>
   <body>
@@ -19,8 +22,8 @@
 
           <div class="site-header__body">
             <div class="content">
-              <h1>Obrigado!</h1>
-              <p>
+              <h1 data-aos="fade" data-aos-duration="1500">Obrigado!</h1>
+              <p data-aos="fade" data-aos-duration="2000">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu
                 orci vel urna elementum fringilla porttitor in purus. Aenean at
                 commodo ipsum
@@ -39,11 +42,11 @@
     <section class="outros-servicos">
       <div class="container">
         <header class="outros-servicos__header">
-          <h2>Outros serviços:</h2>
+          <h2 data-aos="fade">Outros serviços:</h2>
         </header>
         <div class="outros-servicos__body">
           <div class="boxes">
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="700">
               <div class="box__header">
                 <img src="./assets//img/imagem-ssd@2x.png" alt="ssd" />
               </div>
@@ -61,7 +64,7 @@
                 </a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="800">
               <div class="box__header">
                 <img src="./assets//img/imagem-hd.png" alt="HD" />
               </div>
@@ -79,7 +82,7 @@
                 </a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="900">
               <div class="box__header">
                 <img
                   src="./assets//img/imagem-cartao-de-memoria@2x.png"
@@ -100,7 +103,7 @@
                 </a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="700">
               <div class="box__header">
                 <img
                   src="./assets//img/imagem-celular@2x.png"
@@ -121,7 +124,7 @@
                 </a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="800">
               <div class="box__header">
                 <img src="./assets//img/imagem-raid.png" alt="Raid" />
               </div>
@@ -139,7 +142,7 @@
                 </a>
               </div>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up" data-aos-duration="900">
               <div class="box__header">
                 <img
                   src="./assets//img/imagem-hd-externo.png"
@@ -167,10 +170,10 @@
     <footer class="site-footer obrigado">
       <div class="container">
         <div class="site-footer__inside">
-          <button class="button button--large button--danger">
+          <button class="button button--large button--danger" data-aos="fade">
             CONHEÇA NOSSOS OUTROS SERVIÇOS
           </button>
-          <div class="content">
+          <div class="content" data-aos="fade">
             <p>
               compartilhe com seus amigos!
             </p>
@@ -195,12 +198,16 @@
               />
             </a>
           </div>
-          <div class="site-footer__copyright">
+          <div class="site-footer__copyright" data-aos="fade">
             Copyright © 2020 - Todos os direitos reservados
           </div>
         </div>
       </div>
     </footer>
-    <script src="./assets/dist/main.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
